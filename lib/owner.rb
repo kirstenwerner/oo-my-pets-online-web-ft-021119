@@ -53,6 +53,7 @@ class Owner
     animal_count = []
     iterator = 0 
     @pets.each do |animals, pets|
+      binding.pry
       iterator += 1 
       pets.each do |pet| 
         animal_count[iterator - 1] += 1
