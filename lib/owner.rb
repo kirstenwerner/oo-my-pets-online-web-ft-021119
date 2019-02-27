@@ -50,7 +50,14 @@ class Owner
   end 
   
   def list_pets
-    animal_count = @pets.each {|animals, pets| animals.length}
+    animal_count = []
+    iterator = 0 
+    @pets.each do |animals, pets|
+      iterator += 1 
+      pets.each do |pet| 
+        animal_count[iterator - 1] += 1
+      end 
+    end 
     animal_count
     # "I have #{animal_count[0]} fish, #{animal_count[1]} dog(s), and #{animal_count[2]} cat(s)."
   end 
