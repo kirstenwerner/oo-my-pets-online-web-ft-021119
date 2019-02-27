@@ -50,10 +50,7 @@ class Owner
   end 
   
   def list_pets
-    @pets.each do |animals, pets| 
-      animals.count
-      binding.pry
-    end
+    animal_count = @pets.each {|animals, pets| animals.count}    end
     "I have #{} fish, #{} dog(s), and #{} cat(s)."
   end 
   
