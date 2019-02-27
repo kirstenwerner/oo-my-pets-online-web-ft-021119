@@ -53,7 +53,6 @@ class Owner
     animal_count = []
     iterator = 0 
     @pets.each do |animals, pets|
-      binding.pry
       animal_count << pets.length  
     end 
     "I have #{animal_count[0]} fish, #{animal_count[1]} dog(s), and #{animal_count[2]} cat(s)."
