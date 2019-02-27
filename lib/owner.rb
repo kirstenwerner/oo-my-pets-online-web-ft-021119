@@ -55,7 +55,7 @@ class Owner
     @pets.each do |animals, pets|
       iterator += 1 
       pets.each do |pet| 
-        animal_count[iterator - 1] += 1
+        animal_count[iterator - 1]
       end 
     end 
     animal_count
