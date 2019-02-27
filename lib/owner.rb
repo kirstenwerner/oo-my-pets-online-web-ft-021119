@@ -56,8 +56,7 @@ class Owner
       binding.pry
       animal_count << pets.length  
     end 
-    animal_count
-    # "I have #{animal_count[0]} fish, #{animal_count[1]} dog(s), and #{animal_count[2]} cat(s)."
+    "I have #{animal_count[0]} fish, #{animal_count[1]} dog(s), and #{animal_count[2]} cat(s)."
   end 
   
   def self.all 
