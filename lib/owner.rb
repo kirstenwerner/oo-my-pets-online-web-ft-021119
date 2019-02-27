@@ -54,7 +54,7 @@ class Owner
     iterator = 0 
     @pets.each do |animals, pets|
       binding.pry
-      pets.length  
+      animal_count << pets.length  
     end 
     animal_count
     # "I have #{animal_count[0]} fish, #{animal_count[1]} dog(s), and #{animal_count[2]} cat(s)."
